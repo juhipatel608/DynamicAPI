@@ -27,8 +27,8 @@
                     var imageURL = results[i].images.fixed_height.url;
                     var HeroDiv = $("<div>").addClass("heroimage");
                     var HeroImage = $("<img>");
-                    HeroImage.attr("src", imgStillURL);
-                    HeroImage.attr("data-still", imgStillURL);
+                    HeroImage.attr("src", imageStillURL);
+                    HeroImage.attr("data-still", imageStillURL);
                     HeroImage.attr("data-animate", imageURL);
                     HeroImage.attr("data-state", "still");
                     var p = $("<p>").text("Rating:PG " + results[i].rating);
