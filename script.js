@@ -21,9 +21,9 @@ $(document).on("click", ".btn", function () {
             HeroImage.attr("data-still", imageStillURL);
             HeroImage.attr("data-animate", imageURL);
             HeroImage.attr("data-state", "still");
-            var p = $("<p>").text("Rating:PG " + results[i].rating);
+            var p = $("<p>").text("Rating:" + results[i].rating);
             HeroImage.attr("alt", "heroimage");
-            HeroDiv.append(HeroImage);
+            HeroDiv.append(HeroImage).css({"float":"left"});
             HeroDiv.append(p);
             $("#images-show").prepend(HeroDiv);
 
